@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/DateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="날짜를 선택하세요"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/CommentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="일기"
+                android:inputType="textPersonName"
+                android:textAlignment="textStart"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동영상 검색하기" />
+
+    <TextView
+        android:id="@+id/VideoTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="선택한 동영상 제목이 표시됩니다."
+        android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/WriteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/plus"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>

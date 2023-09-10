@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TitleView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0.2"
+        android:fontFamily="@font/maruburiregular"
+        android:text=" 음악일기"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/RecordView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/WriteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/plus"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>
