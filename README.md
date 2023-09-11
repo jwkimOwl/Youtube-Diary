@@ -1,9 +1,12 @@
 # Youtube-Diary
 Android app to search, take notes, and save notes on youtube videos
+- Used Youtube Data API v3
+- Used Youtube Player API
+
+Using Youtube API, you can search Youtube videos and save it on your phone with your own note.
 
 Reference: [🔗abhi5658/search-youtube](https://github.com/abhi5658/search-youtube) (Youtube video search UI)
 
-Using Youtube API, you can search Youtube videos and save it on your phone with your own note.
 
 ### Features
 - Search Youtube video
